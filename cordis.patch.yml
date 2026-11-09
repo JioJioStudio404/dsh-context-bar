@@ -1,0 +1,10 @@
+# dsh-context-bar bundle patch: one host row.
+#
+# The host half does nothing; the bar is the browser half (lib/client.js),
+# registered in the composer's status bar (`conversation.composer.dock`).
+# The row id is stable: a user's `- id: dsh-context-bar / disabled: true`
+# in $DSH_HOME/cordis.patch.yml addresses it.
+
+- insert:
+    - id: dsh-context-bar
+      name: dsh-context-bar
