@@ -1,7 +1,8 @@
 {
   "name": "dsh-context-bar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A context bar for DeepSeek Harness's composer status bar: how full the conversation's context is, as a segmented bar and a percentage, on every route — from the provider's reported usage, or DeepSeek Harness's own estimate when a route reports none — with where auto-compaction starts.",
+  "icon": "icon.svg",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,13 +28,15 @@
     "cordis.patch.yml",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "icon.svg"
   ],
   "scripts": {
     "check": "node --check lib/index.js && node --check lib/client.js"
   },
   "engines": {
-    "node": ">=24.9"
+    "node": ">=24.9",
+    "dsh": ">=0.2.2-rc.1"
   },
   "keywords": [
     "deepseek-harness",
